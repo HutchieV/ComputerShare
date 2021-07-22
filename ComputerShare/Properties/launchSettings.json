@@ -1,0 +1,11 @@
+{
+  "profiles": {
+    "ComputerShare": {
+      "commandName": "Project"
+    },
+    "ComputerShare Args": {
+      "commandName": "Project",
+      "commandLineArgs": "C:\\Users\\Sam\\Dev\\ComputerShare\\ComputerShare\\test_data\\ChallengeSampleDataSet2.txt"
+    }
+  }
+}
