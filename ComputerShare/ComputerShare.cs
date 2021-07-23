@@ -25,15 +25,15 @@ namespace ComputerShare
 
             ShareWorker sh = new ShareWorker();
 
-            var _dailyShares = sh.GetShares(args[0]);
-            var _bestShares  = sh.ProcessShares(_dailyShares);
+            var dailyShares = sh.GetShares(args[0]);
+            var bestShares  = sh.ProcessShares(dailyShares);
 
             Console.Error.WriteLine();
             Console.WriteLine(String.Format("{0}({1}),{2}({3})", 
-                _bestShares[0].Item1, 
-                _bestShares[0].Item2, 
-                _bestShares[1].Item1, 
-                _bestShares[1].Item2));
+                bestShares[0].Item1, 
+                bestShares[0].Item2, 
+                bestShares[1].Item1, 
+                bestShares[1].Item2));
 
             return 0;
         }

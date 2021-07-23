@@ -4,12 +4,16 @@ using System.Collections.Generic;
 
 namespace ComputerShare
 {
-    class ShareWorker
+    /// <summary>
+    /// ShareWorker class which includes functions to parse a shares data file
+    /// and find the ideal lowest buying and highest selling days in a month
+    /// </summary>
+    public class ShareWorker
     {
-        public ShareWorker()
-        {
-
-        }
+        /// <summary>
+        /// Instantiates a ShareWorker object
+        /// </summary>
+        public ShareWorker() {}
 
         /// <summary>
         /// Parses a comma-delimited file containing daily share prices
@@ -49,9 +53,9 @@ namespace ComputerShare
         {
             List<Tuple<int, float>> returnValues = new List<Tuple<int, float>>();
 
-            int _lowest = 0;
-            int _highest = 0;
-            float _diff = 0;
+            int _lowest = -1;
+            int _highest = -1;
+            float _diff = -1;
 
             // For every day...
             for (int i = 0; i < shares.Count; i++)
@@ -70,7 +74,7 @@ namespace ComputerShare
                 }
             }
 
-            Console.Error.WriteLine(String.Format("L: {0}, H: {1}, D: {2}", _lowest + 1, _highest + 1, _diff));
+            // Console.Error.WriteLine(String.Format("L: {0}, H: {1}, D: {2}", _lowest + 1, _highest + 1, _diff));
 
             returnValues.Add(new Tuple<int, float>(_lowest + 1, shares[_lowest]));
             returnValues.Add(new Tuple<int, float>(_highest + 1, shares[_highest]));

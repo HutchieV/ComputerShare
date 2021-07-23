@@ -5,11 +5,11 @@
     },
     "ComputerShare Args": {
       "commandName": "Project",
-      "commandLineArgs": "C:\\Users\\Sam\\Dev\\ComputerShare\\ComputerShare\\TestData\\ChallengeSampleDataSet2.txt"
+      "commandLineArgs": "C:\\Users\\Sam\\Dev\\ComputerShare\\ComputerShareTests\\TestData\\ChallengeSampleDataSet2.txt"
     },
     "ComputerShare Args Desktop": {
       "commandName": "Project",
-      "commandLineArgs": "C:\\Users\\Benpo\\source\\repos\\ComputerShare\\ComputerShare\\TestData\\ChallengeSampleDataSet2.txt"
+      "commandLineArgs": "C:\\Users\\Benpo\\source\\repos\\ComputerShare\\ComputerShareTests\\TestData\\ChallengeSampleDataSet2.txt"
     }
   }
 }
