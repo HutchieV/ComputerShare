@@ -8,8 +8,10 @@ namespace ComputerShareTests
     public class ComputerShareTests
     {
         [TestMethod]
-        public void TestMethod1()
+        public void Test1()
         {
+            ShareWorker sh = new ShareWorker();
+
         }
     }
 }
